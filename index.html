@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side -->
+        <div class="left">
+            <!-- Header -->
+            <div class="header">
+                <div class="profile">
+                    <img class="cover" src="https://www.nzherald.co.nz/resizer/v2/I4A5KPOAKBDALIJL3LPHROLKDE.jpg?auth=410e570483945a9918e9bb8ebe89d025dfd4957da21b8c5c386df6df9eeeb57b&width=576&height=613&quality=70&smart=true">
+                </div>
+                <ul class="nav-icon">
+                    <li><ion-icon name="chatbox-ellipses"></ion-icon></li>
+                    <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+                </ul>
+            </div>
+            <!-- Search -->
+            <div class="search">
+                <div>
+                    <input type="text" placeholder="Search or start a new chat">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+            </div>
+            <!-- Chats -->
+             <div class="chats">
+                <div class="block" data-name="Jan Koum" data-img="https://www.mobigyaan.com/wp-content/uploads/2018/05/whatsapp-co-founder-jan-koum.jpg">
+                    <div class="image">
+                        <img class="cover" src="https://www.mobigyaan.com/wp-content/uploads/2018/05/whatsapp-co-founder-jan-koum.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h3>Jan Koum</h3>
+                            <p class="time">11:11</p>
+                        </div>
+                        <div class="msg">
+                            <p>WhatsApp's current Chief Executive Officer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" data-name="Brian Acton" data-img="https://media.wired.com/photos/5dc5c7abdc63930009ef0157/1:1/w_1087,h_1087,c_limit/W25_BrianActon_Dina-Litovsky.jpg">
+                    <div class="image">
+                        <img class="cover" src="https://specials-images.forbesimg.com/imageserve/5d8b0d2022254b0008e16873/416x416.jpg?background=000000&cropX1=839&cropX2=3999&cropY1=831&cropY2=3994">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h3>Brian Acton</h3>
+                            <p class="time">11:11</p>
+                        </div>
+                        <div class="msg">
+                            <p>WhatsApp was founded in February 2009!</p>       
+                        </div>
+                    </div>
+                </div>
+                <div class="block" data-name="Elon Musk" data-img="https://media.newyorker.com/photos/66ba72ad48c45ec2854f7f13/1:1/w_1707,h_1707,c_limit/Anderson-Musk-PoliticalActivism.jpg">
+                    <div class="image">
+                        <img class="cover" src="https://media.newyorker.com/photos/66ba72ad48c45ec2854f7f13/1:1/w_1707,h_1707,c_limit/Anderson-Musk-PoliticalActivism.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h3>Elon Musk</h3>
+                            <p class="time">11:11</p>
+                        </div>
+                        <div class="msg">
+                            <p>CEO of Tesla Motors</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" data-name="Bill Gates" data-img="https://imageio.forbes.com/specials-images/imageserve/62d599ede3ff49f348f9b9b4/0x0.jpg?format=jpg&crop=821,821,x155,y340,safe&height=416&width=416&fit=bounds">
+                    <div class="image">
+                        <img class="cover" src="https://imageio.forbes.com/specials-images/imageserve/62d599ede3ff49f348f9b9b4/0x0.jpg?format=jpg&crop=821,821,x155,y340,safe&height=416&width=416&fit=bounds">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h3>Bill Gates</h3>
+                            <p class="time">11:11</p>
+                        </div>
+                        <div class="msg">
+                            <p>Former CEO of Microsoft</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" data-name="Jeff Bezos" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCmLKaZBDEhia_XnEL74pwvkPnUOVt6bl770rWuUV0zC9CasA-IAprXmzg_R4qHNzi3QQYd3DVZd5ENZOVzwkxgQ">
+                    <div class="image">
+                        <img class="cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCmLKaZBDEhia_XnEL74pwvkPnUOVt6bl770rWuUV0zC9CasA-IAprXmzg_R4qHNzi3QQYd3DVZd5ENZOVzwkxgQ">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h3>Jeff Bezos</h3>
+                            <p class="time">11:11</p>
+                        </div>
+                        <div class="msg">
+                            <p>Executive chairman of Amazon</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <!-- Right Side -->
+        <div class="right">
+            <div class="header">
+                <div class="name">
+                    <div class="profile">
+                        <img class="cover" id="photo" src="https://www.mobigyaan.com/wp-content/uploads/2018/05/whatsapp-co-founder-jan-koum.jpg">
+                    </div>
+                    <h3 id="person">Jan Koum<br><span>online</span></h3>
+                </div>
+                <ul class="nav-icon">
+                    <li><ion-icon name="attach-outline"></ion-icon></li>
+                    <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+                </ul>
+            </div>
+            <div class="text">
+                <ion-icon name="happy"></ion-icon>
+                <input type="text" placeholder="Type a message">
+                <ion-icon name="mic"></ion-icon>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
